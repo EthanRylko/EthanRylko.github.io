@@ -8,13 +8,13 @@ body {
 h2 {
 	font: 144px Arial, sans-serif;
 	color: white;
-	margin: 5%;
+	margin: 2%;
 }
 
 h5 {
 	font: 48px Arial, sans-serif;
 	color: white;
-	margin: 5%;
+	margin: 2%;
 }
 
 h6 {
@@ -59,24 +59,4 @@ ul.navbar li a {
 
 ul.navbar li a:hover {
 	background-color: #d6ad63;
-}
-
-/* terminal window */
-.rectangle {
-	width: 65%;
-	background-color: #edd3a4;
-	border: 2px solid #d6ad63;
-	border-radius: 8px 8px 2px 2px;
-	margin: 0.5%;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	justify-content: center;
-}
-
-canvas {
-	width: 100%;
-	aspect-ratio: 16/9;
-	margin-top: 2%;
-	border-top: 2px solid #d6ad63;
 }
