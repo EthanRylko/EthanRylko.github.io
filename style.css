@@ -1,0 +1,82 @@
+/* background */
+body {
+	background: url('bg.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* various headers */
+h2 {
+	font: 144px Arial, sans-serif;
+	color: white;
+	margin: 5%;
+}
+
+h5 {
+	font: 48px Arial, sans-serif;
+	color: white;
+	margin: 5%;
+}
+
+h6 {
+	font: 20px Arial, sans-serif;
+	color: black;
+	margin: 2px;
+}
+
+/* site section */
+div.section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+/* navbar */
+ul.navbar {
+	list-style-type: none;
+	margin: 0.5%;
+	padding: 0;
+	overflow: hidden;
+	background-color: #edd3a4;
+	border-radius: 8px;
+}
+
+ul.navbar li {
+	float: left;
+}
+
+ul.navbar li.right {
+	float: right;
+}
+
+ul.navbar li a {
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: #000;
+	font: 16px Arial, sans-serif;
+}
+
+ul.navbar li a:hover {
+	background-color: #d6ad63;
+}
+
+/* terminal window */
+.rectangle {
+	width: 65%;
+	background-color: #edd3a4;
+	border: 2px solid #d6ad63;
+	border-radius: 8px 8px 2px 2px;
+	margin: 0.5%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+canvas {
+	width: 100%;
+	aspect-ratio: 16/9;
+	margin-top: 2%;
+	border-top: 2px solid #d6ad63;
+}
