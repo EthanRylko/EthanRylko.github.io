@@ -25,36 +25,69 @@
 			margin-top: 2%;
 			border-top: 2px solid #d6ad63;
 		}
+		
 	</style>
 </head>
 
 <body>
 	<!-- HTML markup for the navigation bar -->
 	<div id="root">
-		<ul class="navbar">
-			<li><a href="index.html"><b><i>Home</i></b></a></li>
-			<li><a href="about.html"><b>About</b></a></li>
-			<li><a href="contact.html"><b>Contact</b></a></li>
-			<!-- Feature not ready! <li><a href="blackjack.html"><b>For Fun</b></a></li> -->
-			<li class="right"><a href="https://www.linkedin.com/in/ethan-rylko/"><b>LinkedIn</b></a></li>
-			<li class="right"><a href="https://www.instagram.com/erylk5/"><b>Instagram</b></a></li>
-		</ul>
+		<section id="Home">
+			<ul class="navbar">
+				<li><a href="index.html"><b>Home</b></a></li>
+				<li><a href="index.html#About"><b>About</b></a></li>
+				<li><a href="index.html#Contact"><b>Contact</b></a></li>
+				<!-- Feature not ready! <li><a href="blackjack.html"><b>For Fun</b></a></li> -->
+				<li class="right"><a href="Rylko_Ethan_Resume.pdf" target="_blank"><b>Resume (PDF)</b></a></li>
+			</ul>
 		
-		<div id="topsetion" class="section">
-			<div>
-				<h2> Hello. </h2>
-				<h5> I'm Ethan Rylko. </h5>
+			<div id="topsetion" class="row">
+				<div class="center-nowrap">
+					<h2> Hello. </h2>
+					<h5> I'm Ethan Rylko. </h5>
+				</div>
+				
+				<div class="rectangle">
+					<canvas id="window" width="1600px" height="900px"></canvas>
+				</div>
 			</div>
-			
-			<div class="rectangle">
-				<canvas id="window" width="1600px" height="900px"></canvas>
+		</section>
+		
+		<br> <br> <br>
+		
+		<section id="About">
+			<div id="midsection" class="block">
+				<h3 class="center"> About <br> </h3>
+				<p> Under construction! </p>
 			</div>
-		</div>
-
-		<!--
-		<label id="number"> 0 </label> <br>
-		<button type="button" id="myButton"> Inc </button>
-		-->
+		</section>
+		
+		<br> <br> <br>
+		
+		<section id="Contact">
+			<div id="contact" class="block">
+				<h3 class="center"> Contact <br> </h3>
+				<div id="contact-cards" class="row">
+					<a href="mailto:ethan.rylko@gmail.com" class="nohighlightlink"> <div id="personal-email" class="contact-card">
+						<h6> <b> Personal email </b> </h6>
+						<h6> ethan.rylko@gmail.com </h6>
+					</div> </a>
+					<a href="mailto:rylkoeth@msu.edu" class="nohighlightlink"> <div id="school-email" class="contact-card">
+						<h6> <b> School email </b> </h6>
+						<h6> rylkoeth@msu.edu </h6>
+					</div> </a>
+					<a href="https://www.linkedin.com/in/ethan-rylko/" class="nohighlightlink"> <div id="linkedin" class="contact-card">
+						<h6> <b> LinkedIn </b> </h6>
+						<h6> Ethan Rylko </h6>
+					</div> </a>
+					<a href="https://www.instagram.com/erylk5/" class="nohighlightlink"> <div id="instagram" class="contact-card">
+						<h6> <b> Instagram </b> </h6>
+						<h6> @erylk5 </h6>
+					</div> </a>
+				</div>
+			</div>
+		</section>
+		
 	</div>
   
 	<script src="index.js"></script>

@@ -62,20 +62,18 @@ function typeParagraph(str, x, y, t) {
 ctx.fillRect(0, 0, w, h);
 
 ctx.font = `${fontSize}pt Courier`;
-ctx.fillStyle = textColor;
-ctx.fillText(">", 2, fontSize + 2);
 
-flashCursor(2 + fontWidth, 4, "#000000", 9);
-setTimeout(typeOut, 4500, "whoami", fontWidth + 2, fontSize + 2, 50);
-setTimeout(flashCursor, 4850, fontWidth * 7 + 2, 4, "#000000", 5);
-setTimeout(typeParagraph, 6850, spiel, fontWidth, 2 * fontSize + 2, 20);
-setTimeout(typeOut, 7050 + 20 * spiel.length, ">", 2, 2 + 7 * fontSize, 0);
-setTimeout(flashCursor, 7050 + 20 * spiel.length, fontWidth + 2, 4 + 6 * fontSize, "#000000", 7);
-setTimeout(typeOut, 10550 + 20 * spiel.length, "ls passions", fontWidth + 2, 2 + 7 * fontSize, 50);
-setTimeout(flashCursor, 11150 + 20 * spiel.length, fontWidth * 12 + 2, 4 + 6 * fontSize, "#000000", 5);
-setTimeout(typeParagraph, 13650 + 20 * spiel.length, passions, fontWidth, 8 * fontSize + 2, 20);
-setTimeout(typeOut, 13850 + 20 * spiel.length + 20 * passions.length, ">", 2, 2 + 14 * fontSize, 0);
-setTimeout(flashCursor, 13850 + 20 * spiel.length + 20 * passions.length, fontWidth + 2, 4 + 13 * fontSize, "#000000", "inf");
+//flashCursor(2 + fontWidth, 4, "#000000", 9);
+typeOut(">whoami", 2, fontSize + 2, 50);
+setTimeout(flashCursor, 350, fontWidth * 7 + 2, 4, "#000000", 5);
+setTimeout(typeParagraph, 2350, spiel, fontWidth, 2 * fontSize + 2, 20);
+setTimeout(typeOut, 2550 + 20 * spiel.length, ">", 2, 2 + 7 * fontSize, 0);
+//setTimeout(flashCursor, 7050 + 20 * spiel.length, fontWidth + 2, 4 + 6 * fontSize, "#000000", 7);
+setTimeout(typeOut, 2750 + 20 * spiel.length, "ls passions", fontWidth + 2, 2 + 7 * fontSize, 50);
+setTimeout(flashCursor, 3300 + 20 * spiel.length, fontWidth * 12 + 2, 4 + 6 * fontSize, "#000000", 5);
+setTimeout(typeParagraph, 5800 + 20 * spiel.length, passions, fontWidth, 8 * fontSize + 2, 20);
+setTimeout(typeOut, 6000 + 20 * spiel.length + 20 * passions.length, ">", 2, 2 + 14 * fontSize, 0);
+setTimeout(flashCursor, 6000 + 20 * spiel.length + 20 * passions.length, fontWidth + 2, 4 + 13 * fontSize, "#000000", "inf");
 
 
 

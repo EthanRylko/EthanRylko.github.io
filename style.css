@@ -1,3 +1,9 @@
+/*
+colors:
+bg:		#edd3a4
+border:	#d6ad63
+*/
+
 /* background */
 body {
 	background: url('bg.jpg') no-repeat center center fixed;
@@ -6,13 +12,20 @@ body {
 
 /* various headers */
 h2 {
-	font: 144px Arial, sans-serif;
+	font: 160px Arial, sans-serif;
 	color: white;
 	margin: 2%;
 }
 
-h5 {
+h3 {
 	font: 48px Arial, sans-serif;
+	color: black;
+	font-weight: bold;
+	margin: 2px;
+}
+
+h5 {
+	font: 40px Arial, sans-serif;
 	color: white;
 	margin: 2%;
 }
@@ -20,15 +33,67 @@ h5 {
 h6 {
 	font: 20px Arial, sans-serif;
 	color: black;
+	width: 100%;
+	margin: auto;
+}
+
+p {
+	font: 16px Arial, sans-serif;
+	color: black;
 	margin: 2px;
 }
 
 /* site section */
-div.section {
+div.row {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 	align-items: center;
+}
+
+div.block {
+	background-color: #edd3a4;
+	border: 2px solid #d6ad63;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 0.5%;
+}
+
+div.contact-card {
+	background-color: #edd3a4;
+	border: 2px solid #d6ad63;
+	border-radius: 8px;
+	padding: 20px;
+	margin: 0.5%;
+	text-align: center;
+	width: 300px;
+	height: 50px;
+}
+
+div.contact-card:hover {
+	background-color: #d6ad63;
+}
+
+/* Link properties */
+a.nohighlightlink:link {
+	color: black;
+	text-decoration: none; 
+}
+
+
+a.nohighlightlink:visited {
+	color: black;
+	text-decoration: none; 
+}
+
+/* generic properties */
+.center {
+	text-align: center;
+}
+
+.center-nowrap {
+	text-align: center;
+	white-space: nowrap;
 }
 
 /* navbar */
@@ -38,6 +103,7 @@ ul.navbar {
 	padding: 0;
 	overflow: hidden;
 	background-color: #edd3a4;
+	border: 2px solid #d6ad63;
 	border-radius: 8px;
 }
 
