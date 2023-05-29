@@ -1,8 +1,13 @@
 /*
 colors:
 bg:		#edd3a4
+middle: #e8c587
 border:	#d6ad63
 */
+
+html {
+	font: 14px Arial, sans-serif;
+}
 
 /* background */
 body {
@@ -43,12 +48,27 @@ p {
 	margin: 2px;
 }
 
-/* site section */
+/* site sections */
 div.row {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+div.center-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 	align-items: center;
+}
+
+div.column {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 10px;
 }
 
 div.block {
@@ -57,6 +77,26 @@ div.block {
 	border-radius: 8px;
 	padding: 10px;
 	margin: 0.5%;
+}
+
+div.course-block {
+	background-color: #e8c587;
+	border: 2px solid #d6ad63;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 0.5%;
+	width: 400px;
+}
+
+div.course-card {
+	background-color: #edd3a4;
+	border: 2px solid #d6ad63;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 0.5%;
+	text-align: center;
+	width: 400px;
+	display: none;
 }
 
 div.contact-card {
@@ -71,7 +111,22 @@ div.contact-card {
 }
 
 div.contact-card:hover {
-	background-color: #d6ad63;
+	background-color: #e8c587;
+}
+
+/* Buttons */
+button.semester {
+	background-color: #edd3a4;
+	border: 2px solid #d6ad63;
+	border-radius: 8px;
+	padding: 10px;
+	width: 150px;
+	margin: 0.5%;
+	text-align: center;
+}
+
+button.semester:hover {
+	background-color: #e8c587;
 }
 
 /* Link properties */
@@ -89,6 +144,10 @@ a.nohighlightlink:visited {
 /* generic properties */
 .center {
 	text-align: center;
+}
+
+.left {
+	text-align: left;
 }
 
 .center-nowrap {
@@ -124,5 +183,5 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
-	background-color: #d6ad63;
+	background-color: #e8c587;
 }

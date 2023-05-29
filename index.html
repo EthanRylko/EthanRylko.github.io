@@ -7,7 +7,7 @@
 	
 	<style>
 		/* terminal window */
-		.rectangle {
+		.window-edge {
 			width: 65%;
 			background-color: #edd3a4;
 			border: 2px solid #d6ad63;
@@ -34,20 +34,20 @@
 	<div id="root">
 		<section id="Home">
 			<ul class="navbar">
-				<li><a href="index.html"><b>Home</b></a></li>
-				<li><a href="index.html#About"><b>About</b></a></li>
-				<li><a href="index.html#Contact"><b>Contact</b></a></li>
+				<li><a href="#Home"><b>Home</b></a></li>
+				<li><a href="#About"><b>About</b></a></li>
+				<li><a href="#Contact"><b>Contact</b></a></li>
 				<!-- Feature not ready! <li><a href="blackjack.html"><b>For Fun</b></a></li> -->
 				<li class="right"><a href="Rylko_Ethan_Resume.pdf" target="_blank"><b>Resume (PDF)</b></a></li>
 			</ul>
 		
-			<div id="topsetion" class="row">
+			<div id="home" class="center-row">
 				<div class="center-nowrap">
 					<h2> Hello. </h2>
 					<h5> I'm Ethan Rylko. </h5>
 				</div>
 				
-				<div class="rectangle">
+				<div class="window-edge">
 					<canvas id="window" width="1600px" height="900px"></canvas>
 				</div>
 			</div>
@@ -56,9 +56,193 @@
 		<br> <br> <br>
 		
 		<section id="About">
-			<div id="midsection" class="block">
+			<div id="about" class="block">
 				<h3 class="center"> About <br> </h3>
-				<p> Under construction! </p>
+				<h6 class="center"> <b> <br> My Educational Journey </b> </h6>
+				
+				<div class="center">
+					<button type="button" id="fs20" class="semester"> <h6> <b> Fall 2020 </b> </h6> </button>
+					<button type="button" id="ss21" class="semester"> <h6> <b> Spring 2021 </b> </h6> </button>
+					<button type="button" id="fs21" class="semester"> <h6> <b> Fall 2021 </b> </h6> </button>
+					<button type="button" id="ss22" class="semester"> <h6> <b> Spring 2022 </b> </h6> </button>
+					<button type="button" id="fs22" class="semester"> <h6> <b> Fall 2022 </b> </h6> </button>
+					<button type="button" id="ss23" class="semester"> <h6> <b> Spring 2023 </b> </h6> </button>
+					<!-- <button type="button" id="fs23" class="semester"> <h6> <b> Fall 2023 </b> </h6> </button>
+					<button type="button" id="ss24" class="semester"> <h6> <b> Spring 2024 </b> </h6> </button>
+					<button type="button" id="favs" class="semester"> <h6> <b> Favorites </b> </h6> </button> -->
+					
+					<p id="semester-info">
+						Click on the above buttons to see what I learned each semester at Michigan State University.
+					</p>
+					
+					<div class="row">
+						<div class="column">
+							<div class="course-block"> <h3> Tech </h3> </div>
+							<div class="course-card" id="cse232">
+								<h6> CSE 232 </h6>
+								Introduction to Programming II
+							</div>
+							<div class="course-card" id="cse260">
+								<h6> CSE 260 </h6>
+								Discrete Structures in Computer Science
+							</div>
+							<div class="course-card" id="cse320">
+								<h6> CSE 320 </h6>
+								Computer Organization and Architecture
+							</div>
+							<div class="course-card" id="cse331">
+								<h6> CSE 331 </h6>
+								Algorithms and Data Structures
+							</div>
+							<div class="course-card" id="cse300">
+								<h6> CSE 300 </h6>
+								Social, Ethical, and Professional Issues in Computer Science
+							</div>
+							<div class="course-card" id="cse335">
+								<h6> CSE 335 </h6>
+								Object-Oriented Software Design
+							</div>
+							<div class="course-card" id="cse460">
+								<h6> CSE 460 </h6>
+								Computability and Formal Lanugage Theory
+							</div>
+							<div class="course-card" id="cse325">
+								<h6> CSE 325 </h6>
+								Computer Systems
+							</div>
+							<div class="course-card" id="cse402">
+								<h6> CSE 402 </h6>
+								Biometrics and Pattern Recognition
+							</div>
+							<div class="course-card" id="cse422">
+								<h6> CSE 422 </h6>
+								Computer Networks
+							</div>
+							<div class="course-card" id="cse415">
+								<h6> CSE 415 </h6>
+								Introduction to Parallel Computing
+							</div>
+							<div class="course-card" id="cse425">
+								<h6> CSE 425 </h6>
+								Introduction to Computer Security
+							</div>
+						</div>
+						<div class="column">
+							<div class="course-block"> <h3> Business </h3> </div>
+							<div class="course-card" id="acc230">
+								<h6> ACC 230 </h6>
+								Survey of Accounting Concepts
+							</div>
+							<div class="course-card" id="ec201">
+								<h6> EC 201 </h6>
+								Introduction to Microeconomics
+							</div>
+							<div class="course-card" id="ec202">
+								<h6> EC 202 </h6>
+								Introduction to Macroeconomics
+							</div>
+							<div class="course-card" id="fi320">
+								<h6> FI 320 </h6>
+								Introduction to Finance
+							</div>
+							<div class="course-card" id="mkt317">
+								<h6> MKT 317 </h6>
+								Market Analytics
+							</div>
+							<div class="course-card" id="scm371">
+								<h6> SCM 371 </h6>
+								Procurement and Supply Management
+							</div>
+							<div class="course-card" id="scm372">
+								<h6> SCM 372 </h6>
+								Manufacturing and Service Operations Management
+							</div>
+						</div>
+						<div class="column">
+							<div class="course-block"> <h3> Engineering </h3> </div>
+							<div class="course-card" id="mth234">
+								<h6> MTH 234 </h6>
+								Multivariable Calculus
+							</div>
+							<div class="course-card" id="egr100">
+								<h6> EGR 100 </h6>
+								Introduction to Engineering Design
+							</div>
+							<div class="course-card" id="mth314">
+								<h6> MTH 314 </h6>
+								Matrix Algebra with Computational Applications
+							</div>
+							<div class="course-card" id="stt351">
+								<h6> STT 351 </h6>
+								Probability and Statistics for Engineering
+							</div>
+							<div class="course-card" id="mth235">
+								<h6> MTH 235 </h6>
+								Differential Equations
+							</div>
+							<div class="course-card" id="ce221">
+								<h6> CE 221 </h6>
+								Statics
+							</div>
+							<div class="course-card" id="me280">
+								<h6> ME 280 </h6>
+								Graphic Communications
+							</div>
+							<div class="course-card" id="aesc210">
+								<h6> AESC 210 </h6>
+								Global Systems: Engineering, Economics, Environment
+							</div>
+							<div class="course-card" id="mse250">
+								<h6> MSE 250 </h6>
+								Materials Science and Engineering
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<h6 class="center"> <b> <br> Activities </b> </h6>
+				<h6><i>Leadership Advantage</i><br></h3>
+				<p>
+					A student-run four-day leadership seminar for incoming College of Engineering
+					students taking place before the Fall semester begins. Fosters teamwork, professional development,
+					and a welcoming environment. I was a participant in the program in 2020, and while the program
+					was virtual due to COVID-19 campus restrictions, I learned many valuable tips for succeeding
+					academically and professionally. I became a facilitator in 2021 as we returned to in-person
+					instruction, leading a group of ten participants through the experience. Activities included
+					an egg drop competition, lunches with corporate recruiters, and a trebuchet building competition.
+					Since 2022, I have been on the Executive Board as the Secretary, managing communications with 
+				facilitators and participants.
+				</p>
+				<h6><i>Triangle Fraternity</i><br></h3>
+				<p>
+					A social fraternity of engineers, scientists, and architects. I pledged in the Spring of 2021
+					and have held leadership positions in every subsequent semester. As a member of the Judicial Board,
+					I was to be knowledgeable of the constitution and bylaws of the organization and uphold the standards
+					of our fraternity. As the community service chair, I organized outings to local parks to remove
+					invasive species to help each member reach the required service hours per semester. As a member
+					educator, I prepared and presented planned lessons to the 18-member pledge class about our history,
+					ethics, etiquette, and expectations.
+				</p>
+				<h6><i>Society of Applied Engineering Sciences</i><br></h3>
+				<p>
+					A professional organization for the Applied Engineering Sciences major at Michigan State
+					University. Network with other undergraduate students and corporate representatives from
+					Fortune 500 companies for engineering and business roles. I joined shortly after I was admitted to the
+					Applied Engineering Sciences program in the fall of 2022, and I was one of the most active members
+					that academic year. As of April 2023, I am on the Executive Board as the Director of External Relations;
+					I organize service events to give back to the local community which supports us.
+				</p>
+				<h6><i>Students Consulting for Nonprofit Organizations</i><br></h3>
+				<p>
+					An entirely student-run organization offering pro-bono consulting services to charitable
+					nonprofit organizations all over the country. During the spring of 2023, I worked with a team of
+					nine other students to provide services to a local crisis hotline. The primary goals were to
+					increase reach on social media, connect with local resources, and advertise for long-term staff.
+					I used Canva to create and distribute physical materials for advertising such as flyers and
+					business cards.
+				</p>
+				
+				
 			</div>
 		</section>
 		
@@ -76,11 +260,11 @@
 						<h6> <b> School email </b> </h6>
 						<h6> rylkoeth@msu.edu </h6>
 					</div> </a>
-					<a href="https://www.linkedin.com/in/ethan-rylko/" class="nohighlightlink"> <div id="linkedin" class="contact-card">
+					<a href="https://www.linkedin.com/in/ethan-rylko/" target="_blank" class="nohighlightlink"> <div id="linkedin" class="contact-card">
 						<h6> <b> LinkedIn </b> </h6>
 						<h6> Ethan Rylko </h6>
 					</div> </a>
-					<a href="https://www.instagram.com/erylk5/" class="nohighlightlink"> <div id="instagram" class="contact-card">
+					<a href="https://www.instagram.com/erylk5/" target="_blank" class="nohighlightlink"> <div id="instagram" class="contact-card">
 						<h6> <b> Instagram </b> </h6>
 						<h6> @erylk5 </h6>
 					</div> </a>
