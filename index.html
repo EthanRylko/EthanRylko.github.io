@@ -4,29 +4,7 @@
 	<meta charset="UTF-8" />
 	<title> Ethan Rylko </title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	
-	<style>
-		/* terminal window */
-		.window-edge {
-			width: 65%;
-			background-color: #edd3a4;
-			border: 2px solid #d6ad63;
-			border-radius: 8px 8px 2px 2px;
-			margin: 0.5%;
-			display: flex;
-			flex-flow: column nowrap;
-			align-items: center;
-			justify-content: center;
-		}
-
-		canvas {
-			width: 100%;
-			aspect-ratio: 16/9;
-			margin-top: 2%;
-			border-top: 2px solid #d6ad63;
-		}
-		
-	</style>
+	<link rel="icon" type="image/png" href="icon.png">
 </head>
 
 <body>
@@ -71,8 +49,10 @@
 					<button type="button" id="ss24" class="semester"> <h6> <b> Spring 2024 </b> </h6> </button>
 					<button type="button" id="favs" class="semester"> <h6> <b> Favorites </b> </h6> </button> -->
 					
-					<p id="semester-info">
+					<p id="semester-info" class="extramargin">
 						Click on the above buttons to see what I learned each semester at Michigan State University.
+						Each semester has a brief summary of the courses I took, as well as concepts I learned
+						and projects I completed.
 					</p>
 					
 					<div class="row">
@@ -80,121 +60,287 @@
 							<div class="course-block"> <h3> Tech </h3> </div>
 							<div class="course-card" id="cse232">
 								<h6> CSE 232 </h6>
-								Introduction to Programming II
+								<p class="center"> <u> Introduction to Programming II </u> </p>
+								<p>
+									Introductory-level programming class in C++. Data types, the STL,
+									generic algorithms, templates, structs, classes, dynamic memory
+									allocation, and more. Projects included a shopping list which
+									searches for the cheapest items and a DNA protein sequencer.
+								</p>
 							</div>
 							<div class="course-card" id="cse260">
 								<h6> CSE 260 </h6>
-								Discrete Structures in Computer Science
+								<p class="center"> <u> Discrete Structures in Computer Science </u> </p>
+								<p>
+									Discrete math for Computer Science applications. Begin with
+									propositional logic and proofs, move to countability and set
+									theory, and end with finite automata. This class taught me
+									what functions and relations REALLY were.
+								</p>
 							</div>
 							<div class="course-card" id="cse320">
 								<h6> CSE 320 </h6>
-								Computer Organization and Architecture
+								<p class="center"> <u> Computer Organization and Architecture </u> <br> </p>
+								<p>
+									Abstraction: the class. Start with basic digital logic and circuits
+									on one side and C programming on the other. Build up more complex combinatorial and
+									sequential circuits with the help of truth tables, karnaugh maps, and state machines
+									while learning lower-level binary and data concepts with ARM Assembly.
+									Finally, the two paths converge in a project in which I created a microprocessor
+									which runs ARM Thumb machine code. I've been a TA for this course for two semesters.
+								</p>
 							</div>
 							<div class="course-card" id="cse331">
 								<h6> CSE 331 </h6>
-								Algorithms and Data Structures
+								<p class="center"> <u> Algorithms and Data Structures </u> <br> </p>
+								<p>
+									Design, analysis, and implementation of fundamental algorithms and data structures.
+									Linked lists, stacks, queues, trees, hash tables, graphs and more. Many searching
+									algorithms including Dijkstra's algorithm, A* search, BFS, and DFS, as well as
+									sorting algorithms like merge sort, insertion sort, selection sort, and heap sort.
+									Analyze time and space complexity using big-O notation.
+								</p>
 							</div>
 							<div class="course-card" id="cse300">
 								<h6> CSE 300 </h6>
-								Social, Ethical, and Professional Issues in Computer Science
+								<p class="center"> <u> Social, Ethical, and Professional Issues in Computer Science </u> <br> </p>
+								<p>
+									Impact of computing on society, and the professional and ethical responsibilities
+									inherent to computing. Analysis of incidents such as the Therac-25 and discussion
+									of topics such as intellectual property, privacy, and data.
+								</p>
 							</div>
 							<div class="course-card" id="cse335">
 								<h6> CSE 335 </h6>
-								Object-Oriented Software Design
+								<p class="center"> <u> Object-Oriented Software Design </u> <br> </p>
+								<p>
+									Large-scale software development using C++. Object-Oriented design
+									using UML diagrams, inheritance, and polymorphism. Build GUI applications
+									and libraries. First major project was a space shooter built in teams
+									of five using Git for version control and collaboration. Second major
+									project was a library for animation software.
+								</p>
 							</div>
 							<div class="course-card" id="cse460">
 								<h6> CSE 460 </h6>
-								Computability and Formal Lanugage Theory
+								<p class="center"> <u> Computability and Formal Lanugage Theory </u> <br> </p>
+								<p>
+									Explore what problems are solvable using basic models of computation.
+									Mathematical induction proofs, set theory, countability, program behavior
+									problems, the Halting Problem, and Church's Thesis. Regular languages,
+									context-free language, deterministic and non-deterministic finite
+									automata, and pushdown automata. I was a TA for this course in the Fall of 2022.
+								</p>
 							</div>
 							<div class="course-card" id="cse325">
 								<h6> CSE 325 </h6>
-								Computer Systems
+								<p class="center"> <u> Computer Systems </u> <br> </p>
+								<p>
+									Virtualization: the class. Explore standard computer systems and protocols.
+									Processor operation and memory management. Operating system processes, kernels,
+									and file systems. Parallelism and concurrency. Networking and network protocols.
+									Examine security vulnerabilities of systems and solutions.
+								</p>
 							</div>
 							<div class="course-card" id="cse402">
 								<h6> CSE 402 </h6>
-								Biometrics and Pattern Recognition
+								<p class="center"> <u> Biometrics and Pattern Recognition </u> <br> </p>
+								<p>
+									Taught by the esteemed Dr. Arun Ross. The math, statistics, and algorithms behind
+									biometric systems: feature extraction, matching, comparison, and scoring of
+									fingerprints, faces, and irides. Includes many fun computer vision techniques.
+								</p>
 							</div>
 							<div class="course-card" id="cse422">
 								<h6> CSE 422 </h6>
-								Computer Networks
+								<p class="center"> <u> Computer Networks </u> <br> </p>
+								<p>
+									Deep dive on the architecture and protocols in each layer of the
+									Internet Protocol Suite. Application, Transport, Network, and
+									Data layers. Socket programming in C++; one project was an online
+									game, another was a web proxy.
+								</p>
 							</div>
 							<div class="course-card" id="cse415">
 								<h6> CSE 415 </h6>
-								Introduction to Parallel Computing
+								<p class="center"> <u> Introduction to Parallel Computing </u> <br> </p>
+								<p>
+									Parallel and distributed models of computing. Pipelining,
+									cache hierarchies, uniform and distributed architectures,
+									synchronization, message passing, partitioning, Amdahl's Law, and
+									data dependencies. OpenMP, MPI, and CUDA programming in C.
+								</p>
 							</div>
 							<div class="course-card" id="cse425">
 								<h6> CSE 425 </h6>
-								Introduction to Computer Security
+								<p class="center"> <u> Introduction to Computer Security </u> <br> </p>
+								<p>
+									Secure computing practices and defense against cyber attacks.
+									CIA triad, cryptography, access control, network security, and
+									mobile protocols. One project involved using Ettercap to launch an
+									ARP poisining and DNS spoof attack to redirect victims to a malicious
+									site on an insecure network. Another project was launching SQL
+									injections against the Damn Vulnerable Web Application.
+								</p>
 							</div>
 						</div>
 						<div class="column">
 							<div class="course-block"> <h3> Business </h3> </div>
 							<div class="course-card" id="acc230">
 								<h6> ACC 230 </h6>
-								Survey of Accounting Concepts
+								<p class="center"> <u> Survey of Accounting Concepts </u> <br> </p>
+								<p>
+									A brief exploration of managerial and financial accounting concepts.
+									Cost flows, estimation, and analysis. Using accounting to make decisions
+									such as make-or-buy or special order. Master budgets and variance
+									analysis. This is the course that got me more interested in business.
+								</p>
 							</div>
 							<div class="course-card" id="ec201">
 								<h6> EC 201 </h6>
-								Introduction to Microeconomics
+								<p class="center"> <u> Introduction to Microeconomics </u> <br> </p>
+								<p>
+									Economics, but at an individual level. Supply, demand, and
+									opportunity cost in the short and long run. Effects of taxes,
+									price controls, monopolies, and trade.
+								</p>
 							</div>
 							<div class="course-card" id="ec202">
 								<h6> EC 202 </h6>
-								Introduction to Macroeconomics
+								<p class="center"> <u> Introduction to Macroeconomics </u> <br> </p>
+								<p>
+									Economics, but at a macro level. Supply, demand, and opportunity cost.
+									Taxes, GDP, inflation, employment, aggregate expenditures, monetary
+									and fiscal policy, and international trade.
+								</p>
 							</div>
 							<div class="course-card" id="fi320">
 								<h6> FI 320 </h6>
-								Introduction to Finance
+								<p class="center"> <u> Introduction to Finance </u> <br> </p>
+								<p>
+									Introduction to investing: valuation, time value of money, bonds,
+									stocks, and mutual funds. Financial literacy with income statements and
+									balance sheets. Financial planning, capital budgeting, and decision making.
+								</p>
 							</div>
 							<div class="course-card" id="mkt317">
 								<h6> MKT 317 </h6>
-								Market Analytics
+								<p class="center"> <u> Market Analytics </u> <br> </p>
+								<p>
+									Statisitcal analysis using R and data visualization using Tableau.
+									Applications of analytics to decisions and effective communication of
+									results. Models and relationships between variables. ANOVA, T-Tests, and
+									Chi-Squared tests.
+								</p>
 							</div>
 							<div class="course-card" id="scm371">
 								<h6> SCM 371 </h6>
-								Procurement and Supply Management
+								<p class="center"> <u> Procurement and Supply Management </u> <br> </p>
+								<p>
+									The purchasing process and its strategic dimensions. Supplier
+									evaluations and scorecards. Strategic sourcing matrix, category
+									analysis, lean, e-sourcing, negotiation, and supplier integration.
+									Presented a sourcing recommendation for the final project.
+								</p>
 							</div>
 							<div class="course-card" id="scm372">
 								<h6> SCM 372 </h6>
-								Manufacturing and Service Operations Management
+								<p class="center"> <u> Manufacturing and Service Operations Management </u> <br> </p>
+								<p>
+									Operations management for production of goods and services. Product desgin,
+									demand forecasting methods, capacity planning, JIT manufacturing, process
+									analysis and control, lean, six sigma, MRP, and master scheduling. Made
+									capacity decisions based on forecasts in a simulation of a medical
+									testing lab.
+								</p>
 							</div>
 						</div>
 						<div class="column">
 							<div class="course-block"> <h3> Engineering </h3> </div>
 							<div class="course-card" id="mth234">
 								<h6> MTH 234 </h6>
-								Multivariable Calculus
+								<p class="center"> <u> Multivariable Calculus </u> <br> </p>
+								<p>
+									Calculus, but multivariable. Vectors, functions,
+									and planes in a three-dimensional space. Multiple integrals,
+									line integrals, and surface integrals.
+								</p>
 							</div>
 							<div class="course-card" id="egr100">
 								<h6> EGR 100 </h6>
-								Introduction to Engineering Design
+								<p class="center"> <u> Introduction to Engineering Design </u> <br> </p>
+								<p>
+									Interdisciplinary introduction course for engineers with a large focus on
+									teamwork. For the major course projects, I coded a To-Do list mobile
+									app using MIT AppInventor, calculated parameters for the design of a heat
+									exchanger, and contributed to scientific reports. Learned about professional
+									standards and expectations of the field.
+								</p>
 							</div>
 							<div class="course-card" id="mth314">
 								<h6> MTH 314 </h6>
-								Matrix Algebra with Computational Applications
+								<p class="center"> <u> Matrix Algebra with Computational Applications </u> <br> </p>
+								<p>
+									Introduction to many linear algebra concepts such as transformations,
+									Gauss-Jordan elimination, eigenvalues, eigenvectors, vector spaces, SVD,
+									PCA, and more, using Python and NumPy.
+								</p>
 							</div>
 							<div class="course-card" id="stt351">
 								<h6> STT 351 </h6>
-								Probability and Statistics for Engineering
+								<p class="center"> <u> Probability and Statistics for Engineering </u> <br> </p>
+								<p>
+									Probability, estimation, confidence intervals, hypothesis testing,
+									and linear regression for engineering problems. Used Python libraries
+									such as NumPy and matplotlib in the Honors section for analysis.
+								</p>
 							</div>
 							<div class="course-card" id="mth235">
 								<h6> MTH 235 </h6>
-								Differential Equations
+								<p class="center"> <u> Differential Equations </u> <br> </p>
+								<p>
+									Took a year-long break from calculus and returned to
+									differential equations. Seperable, exact, and linear equations.
+									Laplace transforms and Fourier series. Matrices and eigenvalues.
+								</p>
 							</div>
 							<div class="course-card" id="ce221">
 								<h6> CE 221 </h6>
-								Statics
+								<p class="center"> <u> Statics </u> <br> </p>
+								<p>
+									The sum of the forces is zero and the sum of the moments is zero.
+									Equilibrium of particles and rigid bodies. Friction, trusses, and beams.
+								</p>
 							</div>
 							<div class="course-card" id="me280">
 								<h6> ME 280 </h6>
-								Graphic Communications
+								<p class="center"> <u> Graphic Communications </u> <br> </p>
+								<p>
+									3D computer-adided design using Siemens NX. Sketching, modeling,
+									constraints and assemblies. Blueprint reading and ASME standards.
+								</p>
 							</div>
 							<div class="course-card" id="aesc210">
 								<h6> AESC 210 </h6>
-								Global Systems: Engineering, Economics, Environment
+								<p class="center"> <u> Global Systems: Engineering, Economics, Environment </u> <br> </p>
+								<p>
+									System dynamics nd modeling with MATLAB. Weekly presentations on subjects
+									like sustainability, water use, energy, and life cycle analysis.
+									Problem-sovling paradigms such as the Three E's (environment, economics,
+									and engineering) and impact (population, consumption, and technology).
+									Final project was a Monte Carlo simulation of the lake level and algae
+									population of Lake Erie in MATLAB.
+								</p>
 							</div>
 							<div class="course-card" id="mse250">
 								<h6> MSE 250 </h6>
-								Materials Science and Engineering
+								<p class="center"> <u> Materials Science and Engineering </u> <br> </p>
+								<p>
+									Introductory-level materials science, mostly focused on metallurgy.
+									Many hands-on labs including impact testing, annealing, and heat
+									treatment. Microstructures, treatments, mechanical properties,
+									diffusion, atomic bonds, phase diagrams, fatigue, and creep.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -211,8 +357,9 @@
 					instruction, leading a group of ten participants through the experience. Activities included
 					an egg drop competition, lunches with corporate recruiters, and a trebuchet building competition.
 					Since 2022, I have been on the Executive Board as the Secretary, managing communications with 
-				facilitators and participants.
+					facilitators and participants.
 				</p>
+				<br>
 				<h6><i>Triangle Fraternity</i><br></h3>
 				<p>
 					A social fraternity of engineers, scientists, and architects. I pledged in the Spring of 2021
@@ -223,19 +370,21 @@
 					educator, I prepared and presented planned lessons to the 18-member pledge class about our history,
 					ethics, etiquette, and expectations.
 				</p>
+				<br>
 				<h6><i>Society of Applied Engineering Sciences</i><br></h3>
 				<p>
 					A professional organization for the Applied Engineering Sciences major at Michigan State
 					University. Network with other undergraduate students and corporate representatives from
 					Fortune 500 companies for engineering and business roles. I joined shortly after I was admitted to the
-					Applied Engineering Sciences program in the fall of 2022, and I was one of the most active members
+					Applied Engineering Sciences program in the Fall of 2022, and I was one of the most active members
 					that academic year. As of April 2023, I am on the Executive Board as the Director of External Relations;
 					I organize service events to give back to the local community which supports us.
 				</p>
+				<br>
 				<h6><i>Students Consulting for Nonprofit Organizations</i><br></h3>
 				<p>
 					An entirely student-run organization offering pro-bono consulting services to charitable
-					nonprofit organizations all over the country. During the spring of 2023, I worked with a team of
+					nonprofit organizations all over the country. During the Spring of 2023, I worked with a team of
 					nine other students to provide services to a local crisis hotline. The primary goals were to
 					increase reach on social media, connect with local resources, and advertise for long-term staff.
 					I used Canva to create and distribute physical materials for advertising such as flyers and

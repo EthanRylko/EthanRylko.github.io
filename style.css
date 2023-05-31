@@ -46,6 +46,12 @@ p {
 	font: 16px Arial, sans-serif;
 	color: black;
 	margin: 2px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+p.extramargin {
+	margin: 2px 20% 2px 20%;
 }
 
 /* site sections */
@@ -184,4 +190,24 @@ ul.navbar li a {
 
 ul.navbar li a:hover {
 	background-color: #e8c587;
+}
+
+/* terminal window */
+.window-edge {
+	width: 65%;
+	background-color: #edd3a4;
+	border: 2px solid #d6ad63;
+	border-radius: 8px 8px 2px 2px;
+	margin: 0.5%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+canvas {
+	width: 100%;
+	aspect-ratio: 16/9;
+	margin-top: 2%;
+	border-top: 2px solid #d6ad63;
 }

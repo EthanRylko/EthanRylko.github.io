@@ -16,10 +16,45 @@ personal website- look around to get
 to know me better!`;
 let passions =`programming            hiking            
 education              supply-chain      //
-understanding          retro-gaming      //
+animation              retro-gaming      //
 classic-rock           detroit-lions     //
 problem-solving        nature            //
 continuous-improvement`;
+let fs20spiel = `My first semester of college! The optimistic outlook of a\ 
+new beginning from the viewpoint of a fresh Computer Science student\ 
+was bittered by the pandemic, as us students were made to\ 
+take remote classes. I was alone in my room while all my hometown friends\ 
+were off at some other university, so it was a difficult start. Despite\ 
+this, I had a successful semester academically, adjusting to both the\ 
+rigor of college and the new paradigm of remote learning.`;
+let ss21spiel = `In my second semester, the difficulty ramped up.\ 
+Having been formally admitted to the College of Engineering as a\ 
+Computer Science student, classes required a deeper, more specific level of\ 
+knowledge. Classes were still entirely remote, but I was able to make\ 
+many new friends and connections in spite of it.`;
+let fs21spiel = `My third semester, and my first on campus! After a year\ 
+of remote learning, I was eager to actually make the transition to college.\ 
+Doing so was tough, especially with this courseload; several\ 
+conceptually diffcult classes plus the intensive software design couse left\ 
+me with little spare time.`;
+let ss22spiel = `Before my fourth semester, I had considered the Applied\ 
+Engineering Sciences program to place greater emphasis on my business\ 
+education. In this semester, I put the plan into action, finishing the\ 
+necessary prerequisites to gain admission to the major while keeping\ 
+pace with my Computer Science program. This was also the first semester\ 
+that I was a TA for a course. I worked for the architecture course I took\ 
+the prior year. Being a TA is something I enjoyed and continue to enjoy.`;
+let fs22spiel = `I had just been admitted to the Applied Engineering Sciences\ 
+program, and over the summer I completed two business courses and an\ 
+internship. This semester was a balancing act between upper-level Computer\ 
+Science technical electives, business courses supporting my new Supply Chain\ 
+Management concentration, traditional engineering courses, and my new job as\ 
+a TA for the computability theory course.`;
+let ss23spiel = `Similar to the previous semester, this was a busy semester.\ 
+Keeping up with multiple branches of knowledge posed a challenge, but it was\ 
+very enjoyable. I particularly liked the operations management and parallel\ 
+progrmaming courses, as difficult and demanding as the projects were. I also\ 
+returned as a TA to the architecture course.`;
 
 function flashCursor(x, y, color, count) {
 	if (count != "inf") {
@@ -89,7 +124,7 @@ function hideAllCards() {
 }
 
 document.getElementById("fs20").onclick = function() {
-	document.getElementById("semester-info").innerHTML = "My first semester!";
+	document.getElementById("semester-info").innerHTML = fs20spiel;
 	hideAllCards();
 	document.getElementById("fs20").style.backgroundColor = "#e8c587";
 	document.getElementById("cse232").style.display = "block";
@@ -99,7 +134,7 @@ document.getElementById("fs20").onclick = function() {
 }
 
 document.getElementById("ss21").onclick = function() {
-	document.getElementById("semester-info").innerHTML = "My second semester!";
+	document.getElementById("semester-info").innerHTML = ss21spiel;
 	hideAllCards();
 	document.getElementById("ss21").style.backgroundColor = "#e8c587";
 	document.getElementById("cse320").style.display = "block";
@@ -109,7 +144,7 @@ document.getElementById("ss21").onclick = function() {
 }
 
 document.getElementById("fs21").onclick = function() {
-	document.getElementById("semester-info").innerHTML = "My third semester!";
+	document.getElementById("semester-info").innerHTML = fs21spiel;
 	hideAllCards();
 	document.getElementById("fs21").style.backgroundColor = "#e8c587";
 	document.getElementById("cse300").style.display = "block";
@@ -120,7 +155,7 @@ document.getElementById("fs21").onclick = function() {
 }
 
 document.getElementById("ss22").onclick = function() {
-	document.getElementById("semester-info").innerHTML = "My fourth semester!";
+	document.getElementById("semester-info").innerHTML = ss22spiel;
 	hideAllCards();
 	document.getElementById("ss22").style.backgroundColor = "#e8c587";
 	document.getElementById("cse325").style.display = "block";
@@ -130,7 +165,7 @@ document.getElementById("ss22").onclick = function() {
 }
 
 document.getElementById("fs22").onclick = function() {
-	document.getElementById("semester-info").innerHTML = "My fifth semester!";
+	document.getElementById("semester-info").innerHTML = fs22spiel;
 	hideAllCards();
 	document.getElementById("fs22").style.backgroundColor = "#e8c587";
 	document.getElementById("cse402").style.display = "block";
@@ -142,7 +177,7 @@ document.getElementById("fs22").onclick = function() {
 }
 
 document.getElementById("ss23").onclick = function() {
-	document.getElementById("semester-info").innerHTML = "My sixth semester!";
+	document.getElementById("semester-info").innerHTML = ss23spiel;
 	hideAllCards();
 	document.getElementById("ss23").style.backgroundColor = "#e8c587";
 	document.getElementById("cse415").style.display = "block";
