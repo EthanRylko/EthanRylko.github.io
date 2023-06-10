@@ -9,6 +9,11 @@ let fontSize = 48;
 let fontWidth = Math.floor(0.80 * fontSize);
 let fontHeight = Math.floor(1.20 * fontSize);
 
+let lastFrameTime = 0;
+let frameRate = 30;
+let frameInterval = 1000 / frameRate;
+let frame = 0;
+
 let spiel = `I'm a senior studying Computer Science
 and Applied Engineering Sciences at
 Michigan State University. This is my
@@ -126,7 +131,7 @@ function hideAllCards() {
 document.getElementById("fs20").onclick = function() {
 	document.getElementById("semester-info").innerHTML = fs20spiel;
 	hideAllCards();
-	document.getElementById("fs20").style.backgroundColor = "#e8c587";
+	document.getElementById("fs20").style.backgroundColor = "var(--highlight-color)";
 	document.getElementById("cse232").style.display = "block";
 	document.getElementById("cse260").style.display = "block";
 	document.getElementById("acc230").style.display = "block";
@@ -136,7 +141,7 @@ document.getElementById("fs20").onclick = function() {
 document.getElementById("ss21").onclick = function() {
 	document.getElementById("semester-info").innerHTML = ss21spiel;
 	hideAllCards();
-	document.getElementById("ss21").style.backgroundColor = "#e8c587";
+	document.getElementById("ss21").style.backgroundColor = "var(--highlight-color)";
 	document.getElementById("cse320").style.display = "block";
 	document.getElementById("cse331").style.display = "block";
 	document.getElementById("ec201").style.display = "block";
@@ -146,7 +151,7 @@ document.getElementById("ss21").onclick = function() {
 document.getElementById("fs21").onclick = function() {
 	document.getElementById("semester-info").innerHTML = fs21spiel;
 	hideAllCards();
-	document.getElementById("fs21").style.backgroundColor = "#e8c587";
+	document.getElementById("fs21").style.backgroundColor = "var(--highlight-color)";
 	document.getElementById("cse300").style.display = "block";
 	document.getElementById("cse335").style.display = "block";
 	document.getElementById("cse460").style.display = "block";
@@ -157,7 +162,7 @@ document.getElementById("fs21").onclick = function() {
 document.getElementById("ss22").onclick = function() {
 	document.getElementById("semester-info").innerHTML = ss22spiel;
 	hideAllCards();
-	document.getElementById("ss22").style.backgroundColor = "#e8c587";
+	document.getElementById("ss22").style.backgroundColor = "var(--highlight-color)";
 	document.getElementById("cse325").style.display = "block";
 	document.getElementById("ec202").style.display = "block";
 	document.getElementById("fi320").style.display = "block";
@@ -167,7 +172,7 @@ document.getElementById("ss22").onclick = function() {
 document.getElementById("fs22").onclick = function() {
 	document.getElementById("semester-info").innerHTML = fs22spiel;
 	hideAllCards();
-	document.getElementById("fs22").style.backgroundColor = "#e8c587";
+	document.getElementById("fs22").style.backgroundColor = "var(--highlight-color)";
 	document.getElementById("cse402").style.display = "block";
 	document.getElementById("cse422").style.display = "block";
 	document.getElementById("mkt317").style.display = "block";
@@ -179,7 +184,7 @@ document.getElementById("fs22").onclick = function() {
 document.getElementById("ss23").onclick = function() {
 	document.getElementById("semester-info").innerHTML = ss23spiel;
 	hideAllCards();
-	document.getElementById("ss23").style.backgroundColor = "#e8c587";
+	document.getElementById("ss23").style.backgroundColor = "var(--highlight-color)";
 	document.getElementById("cse415").style.display = "block";
 	document.getElementById("cse425").style.display = "block";
 	document.getElementById("scm372").style.display = "block";
@@ -191,7 +196,7 @@ document.getElementById("ss23").onclick = function() {
 document.getElementById("favs").onclick = function() {
 	document.getElementById("semester-info").innerHTML = "These are my favorite classes I've taken, for one reason or another.";
 	hideAllCards();
-	document.getElementById("favs").style.backgroundColor = "#e8c587";
+	document.getElementById("favs").style.backgroundColor = "var(--highlight-color)";
 	document.getElementById("cse320").style.display = "block";
 	document.getElementById("cse402").style.display = "block";
 	document.getElementById("mkt317").style.display = "block";
@@ -199,4 +204,5 @@ document.getElementById("favs").onclick = function() {
 	document.getElementById("ce221").style.display = "block";
 }
 */
+
 animateCanvas();
