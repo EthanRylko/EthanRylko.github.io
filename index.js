@@ -60,6 +60,8 @@ Keeping up with multiple branches of knowledge posed a challenge, but it was\
 very enjoyable. I particularly liked the operations management and parallel\ 
 progrmaming courses, as difficult and demanding as the projects were. I also\ 
 returned as a TA to the architecture course.`;
+let fs23spiel = `Penultimate semester. Computer Science capstone and some\ 
+random engineering classes. It's been tough.`;
 
 function flashCursor(x, y, color, count) {
 	if (count != "inf") {
@@ -190,6 +192,17 @@ document.getElementById("ss23").onclick = function() {
 	document.getElementById("scm372").style.display = "block";
 	document.getElementById("aesc210").style.display = "block";
 	document.getElementById("mse250").style.display = "block";
+}
+
+document.getElementById("fs23").onclick = function() {
+	document.getElementById("semester-info").innerHTML = fs23spiel;
+	hideAllCards();
+	document.getElementById("fs23").style.backgroundColor = "var(--highlight-color)";
+	document.getElementById("cse491").style.display = "block";
+	document.getElementById("gbl323").style.display = "block";
+	document.getElementById("me201").style.display = "block";
+	document.getElementById("aesc310").style.display = "block";
+	document.getElementById("ce371").style.display = "block";
 }
 
 /*
