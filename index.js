@@ -60,8 +60,12 @@ Keeping up with multiple branches of knowledge posed a challenge, but it was\
 very enjoyable. I particularly liked the operations management and parallel\ 
 progrmaming courses, as difficult and demanding as the projects were. I also\ 
 returned as a TA to the architecture course.`;
-let fs23spiel = `Penultimate semester. Computer Science capstone and some\ 
-random engineering classes. It's been tough.`;
+let fs23spiel = `The penultimate semester put my time management skills to\ 
+the test with several semester-long group projects, including the intensive\ 
+computer science capstone, for which my team designed the online multiplayer\ 
+feature for an open-source video game. I also returned as a TA for the\ 
+computability theory course.`;
+let ss24spiel = `TBD`;
 
 function flashCursor(x, y, color, count) {
 	if (count != "inf") {
@@ -203,6 +207,16 @@ document.getElementById("fs23").onclick = function() {
 	document.getElementById("me201").style.display = "block";
 	document.getElementById("aesc310").style.display = "block";
 	document.getElementById("ce371").style.display = "block";
+}
+
+document.getElementById("ss24").onclick = function() {
+	document.getElementById("semester-info").innerHTML = ss24spiel;
+	hideAllCards();
+	document.getElementById("ss24").style.backgroundColor = "var(--highlight-color)";
+	document.getElementById("aesc410").style.display = "block";
+	document.getElementById("cse812").style.display = "block";
+	document.getElementById("ece345").style.display = "block";
+	document.getElementById("mgt325").style.display = "block";
 }
 
 /*
