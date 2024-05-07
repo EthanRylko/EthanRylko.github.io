@@ -14,11 +14,11 @@ let frameRate = 30;
 let frameInterval = 1000 / frameRate;
 let frame = 0;
 
-let spiel = `I'm a senior studying Computer Science
-and Applied Engineering Sciences at
-Michigan State University. This is my
-personal website- look around to get
-to know me better!`;
+let spiel = `I'm a graduate of Michigan State
+University with degrees in Computer 
+Science and Applied Engineering Sciences. 
+This is my personal website- look around 
+to get to know me better!`;
 let passions =`programming            hiking            
 education              supply-chain      //
 animation              retro-gaming      //
@@ -65,7 +65,13 @@ the test with several semester-long group projects, including the intensive\
 computer science capstone, for which my team designed the online multiplayer\ 
 feature for an open-source video game. I also returned as a TA for the\ 
 computability theory course.`;
-let ss24spiel = `TBD`;
+let ss24spiel = `The long-overdue final semester, and a challenging one at that.\ 
+Along with polishing off some of the last requirements for my program, I took the\ 
+capstone course for the Applied Engineering Sciences program for which I designed\ 
+a web application to manage automated database entries. Additionally, the graduate\ 
+course I took for a deeper understanding of distributed systems was quite\ 
+challenging. I also returned as a TA for the architecture course. It was a\ 
+bittersweet goodbye to the school that gave me so much to be thankful for.`;
 
 function flashCursor(x, y, color, count) {
 	if (count != "inf") {
